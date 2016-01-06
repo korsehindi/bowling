@@ -8,7 +8,7 @@
  * 10 10 10 10 10 10 10 10 10 10 10 10 
  * 5 0 7 3 3 3 9 0 1 7 7 2 3 0 10 10 9 1 10
  */
-package org.game;
+package main.java;
 
 public class Bowling {
 

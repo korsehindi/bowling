@@ -1,5 +1,6 @@
-package org.game;
+package test.java;
 
+import main.java.Bowling;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
