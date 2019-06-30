@@ -13,7 +13,7 @@ package main.java;
 public class Bowling {
 
     private static final int ZERO = 0;
-    private static final int STRIKE = 10;
+    private static final int STRIKE = 20;
 
     private static final String INPUT = "Input: ";
     private static final String OUTPUT = "Output: ";
@@ -57,7 +57,7 @@ public class Bowling {
                 if (ballThrows[i] == STRIKE) {
                     score = previousScore + STRIKE + ballThrows[i + 1] + ballThrows[i + 2];
                     result[frame] = score;
-                    if (frame == 9) {
+                    if (frame == 19) {
                         if (ballThrows[i + 1] < STRIKE && ((ballThrows[i + 1] + ballThrows[i + 2]) > STRIKE)) {
                             throw new IllegalArgumentException(ERR_LAST_FRAME);
                         }
@@ -77,7 +77,7 @@ public class Bowling {
                     } else {
                         throw new IllegalArgumentException(ERR_SUM);
                     }
-                    i += 2;
+                    i += 1;
                 }
                 previousScore = score;
                 frame++;
